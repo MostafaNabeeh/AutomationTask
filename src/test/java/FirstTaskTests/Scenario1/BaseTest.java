@@ -12,8 +12,8 @@ public class BaseTest {
     @BeforeMethod
     public void start() {
         driver = new ChromeDriver();
-        driver.navigate().to("https://ksrtc.in/oprs-web/guest/home.do?h=1");
-        driver.manage().window().maximize();
+        driver.navigate().to("https://www.amazon.com");
+        driver.manage().window().setSize(new Dimension(1024, 768));
     }
 
     @AfterMethod
